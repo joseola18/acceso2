@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OLA TRADING VIP - Señales en Vivo</title>
+  <meta name="description" content="OLA TRADING SOCIO - Señales profesionales en vivo con análisis técnico avanzado. Oro, Bitcoin, Forex, Acciones y Criptomonedas." />
+  <!-- Fuente elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #0a0a0a, #1a1a1a);
+      color: #f5f5f5;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem 1rem;
+      background: #111;
+      border-bottom: 2px solid gold;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: gold;
+      margin: 0;
+    }
+    .welcome {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      color: #f5f5f5;
+      font-weight: 500;
+    }
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+      gap: 0.8rem;
+    }
+    .gold-button {
+      background: gold;
+      color: #000;
+      font-weight: 600;
+      padding: 0.6rem 1.2rem;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .gold-button:hover {
+      background: #e6b800;
+    }
+    .ticker {
+      background: #000;
+      padding: 0.5rem;
+    }
+    .signal-block {
+      margin: 2rem auto;
+      max-width: 1000px;
+      background: #141414;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+    }
+    .signal-block h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      color: gold;
+      margin-bottom: 1rem;
+    }
+    .tradingview-widget-container {
+      margin-bottom: 1.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 2px solid gold;
+      margin-top: 3rem;
+    }
+    .vip-button {
+      display: inline-block;
+      background: gold;
+      color: #000;
+      font-weight: 600;
+      padding: 0.8rem 1.6rem;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .vip-button:hover {
+      background: #e6b800;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OLA TRADING VIP</h1>
+    <div class="welcome">BIENVENIDO USUARIO 21452 – BALANCE: 346.23 USD</div>
+    <!-- Botones dorados -->
+    <div class="button-container">
+      <a href="#" class="gold-button">ALARMAS</a>
+      <a href="#" class="gold-button">DEPÓSITOS</a>
+      <a href="#" class="gold-button">RETIROS</a>
+      <a href="#" class="gold-button">COPYTRADING</a>
+      <a href="#" class="gold-button">COMUNIDAD</a>
+      <a href="#" class="gold-button">CURSOS</a>
+    </div>
+  </header>
+
+  <!-- Ticker -->
+  <div class="ticker">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+        "symbols": [
+          {"proName": "OANDA:XAUUSD", "title": "Oro"},
+          {"proName": "BITSTAMP:BTCUSD", "title": "Bitcoin"},
+          {"proName": "NASDAQ:NFLX", "title": "Netflix"},
+          {"proName": "FX:EURUSD", "title": "EUR/USD"},
+          {"proName": "FX:CADJPY", "title": "CAD/JPY"},
+          {"proName": "FX:USDJPY", "title": "USD/JPY"},
+          {"proName": "FX:NZDUSD", "title": "NZD/USD"},
+          {"proName": "FX:AUDUSD", "title": "AUD/USD"},
+          {"proName": "COINBASE:LTCUSD", "title": "Litecoin"}
+        ],
+        "showSymbolLogo": true,
+        "colorTheme": "dark",
+        "isTransparent": false,
+        "displayMode": "adaptive",
+        "locale": "es"
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- ORO -->
+  <div class="signal-block">
+    <h2>ORO - XAUUSD</h2>
+    <div class="tradingview-widget-container">
+      <div id="tradingview_xauusd"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script>
+        new TradingView.widget({
+          "container_id": "tradingview_xauusd",
+          "width": "100%",
+          "height": 400,
+          "symbol": "OANDA:XAUUSD",
+          "interval": "30",
+          "timezone": "Etc/UTC",
+          "theme": "dark",
+          "style": "1",
+          "studies": ["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+          "locale": "es"
+        });
+      </script>
+    </div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+      {
+        "interval": "1m",
+        "width": "100%",
+        "isTransparent": false,
+        "height": 300,
+        "symbol": "OANDA:XAUUSD",
+        "showIntervalTabs": true,
+        "locale": "es",
+        "colorTheme": "dark"
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- BITCOIN -->
+  <div class="signal-block">
+    <h2>BITCOIN - BTCUSD</h2>
+    <div class="tradingview-widget-container">
+      <div id="tradingview_btcusd"></div>
+      <script>
+        new TradingView.widget({
+          "container_id": "tradingview_btcusd",
+          "width": "100%",
+          "height": 400,
+          "symbol": "BITSTAMP:BTCUSD",
+          "interval": "30",
+          "timezone": "Etc/UTC",
+          "theme": "dark",
+          "style": "1",
+          "studies": ["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+          "locale": "es"
+        });
+      </script>
+    </div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+      {
+        "interval": "1m",
+        "width": "100%",
+        "isTransparent": false,
+        "height": 300,
+        "symbol": "BITSTAMP:BTCUSD",
+        "showIntervalTabs": true,
+        "locale": "es",
+        "colorTheme": "dark"
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- NETFLIX -->
+  <div class="signal-block">
+    <h2>NETFLIX - NFLX</h2>
+    <div class="tradingview-widget-container">
+      <div id="tradingview_nflx"></div>
+      <script>
+        new TradingView.widget({
+          "container_id": "tradingview_nflx",
+          "width": "100%",
+          "height": 400,
+          "symbol": "NASDAQ:NFLX",
+          "interval": "30",
+          "timezone": "Etc/UTC",
+          "theme": "dark",
+          "style": "1",
+          "studies": ["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+          "locale": "es"
+        });
+      </script>
+    </div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+      {
+        "interval": "1m",
+        "width": "100%",
+        "isTransparent": false,
+        "height": 300,
+        "symbol": "NASDAQ:NFLX",
+        "showIntervalTabs": true,
+        "locale": "es",
+        "colorTheme": "dark"
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- EURUSD -->
+  <div class="signal-block">
+    <h2>EURUSD</h2>
+    <div class="tradingview-widget-container">
+      <div id="tradingview_eurusd"></div>
+      <script>
+        new TradingView.widget({
+          "container_id": "tradingview_eurusd",
+          "width": "100%",
+          "height": 400,
+          "symbol": "FX:EURUSD",
+          "interval": "30",
+          "timezone": "Etc/UTC",
+          "theme": "dark",
+          "style": "1",
+          "studies": ["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+          "locale": "es"
+        });
+      </script>
+    </div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+      {
+        "interval": "1m",
+        "width": "100%",
+        "isTransparent": false,
+        "height": 300,
+        "symbol": "FX:EURUSD",
+        "showIntervalTabs": true,
+        "locale": "es",
+        "colorTheme": "dark"
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- CADJPY -->
+  <div class="signal-block">
+    <h2>CADJPY</h2>
+    <div class="tradingview-widget-container">
+      <div id="tradingview_cadjpy"></div>
+      <script>
+        new TradingView.widget({
+          "container_id": "tradingview_cadjpy",
+          "width": "100%",
+          "height": 400,
+          "symbol": "FX:CADJPY",
+          "interval": "30",
+          "timezone": "Etc/UTC",
+          "theme": "dark",
+          "style": "1",
+          "studies": ["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+          "locale": "es"
+        });
+      </script>
+    </div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+      {
+        "interval": "1m",
+        "width": "100%",
+        "isTransparent": false,
+        "height": 300,
+        "symbol": "FX:CADJPY",
+        "showIntervalTabs": true,
+        "locale": "es",
+        "colorTheme": "dark"
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- USDJPY -->
+  <div class="signal-block">
+    <h2>USDJPY</h2>
+    <div class="tradingview-widget-container">
+      <div id="tradingview_usdjpy"></div>
+      <script>
+        new TradingView.widget({
+          "container_id": "tradingview_usdjpy",
+          "width": "100%",
+          "height": 400,
+          "symbol": "FX:USDJPY",
+          "interval": "30",
+          "timezone": "Etc/UTC",
+          "theme": "dark",
+          "style": "1",
+          "studies": ["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+          "locale": "es"
+        });
+      </script>
+    </div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+      {
+        "interval": "1m",
+        "width": "100%",
+        "isTransparent": false,
+        "height": 300,
+        "symbol": "FX:USDJPY",
+        "showIntervalTabs": true,
+        "locale": "es",
+        "colorTheme": "dark"
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- NZDUSD -->
+  <div class="signal-block">
+    <h2>NZDUSD</h2>
+    <div class="tradingview-widget-container">
+      <div id="tradingview_nzdusd"></div>
+      <script>
+        new TradingView.widget({
+          "container_id": "tradingview_nzdusd",
+          "width": "100%",
+          "height": 400,
+          "symbol": "FX:NZDUSD",
+          "interval": "30",
+          "timezone": "Etc/UTC",
+          "theme": "dark",
+          "style": "1",
+          "studies": ["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+          "locale": "es"
+        });
+      </script>
+    </div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+      {
+        "interval": "1m",
+        "width": "100%",
+        "isTransparent": false,
+        "height": 300,
+        "symbol": "FX:NZDUSD",
+        "showIntervalTabs": true,
+        "locale": "es",
+        "colorTheme": "dark"
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- AUDUSD -->
+  <div class="signal-block">
+    <h2>AUDUSD</h2>
+    <div class="tradingview-widget-container">
+      <div id="tradingview_audusd"></div>
+      <script>
+        new TradingView.widget({
+          "container_id": "tradingview_audusd",
+          "width": "100%",
+          "height": 400,
+          "symbol": "FX:AUDUSD",
+          "interval": "30",
+          "timezone": "Etc/UTC",
+          "theme": "dark",
+          "style": "1",
+          "studies": ["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+          "locale": "es"
+        });
+      </script>
+    </div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+      {
+        "interval": "1m",
+        "width": "100%",
+        "isTransparent": false,
+        "height": 300,
+        "symbol": "FX:AUDUSD",
+        "showIntervalTabs": true,
+        "locale": "es",
+        "colorTheme": "dark"
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- LITECOIN -->
+  <div class="signal-block">
+    <h2>LITECOIN - LTCUSD</h2>
+    <div class="tradingview-widget-container">
+      <div id="tradingview_ltcusd"></div>
+      <script>
+        new TradingView.widget({
+          "container_id": "tradingview_ltcusd",
+          "width": "100%",
+          "height": 400,
+          "symbol": "COINBASE:LTCUSD",
+          "interval": "30",
+          "timezone": "Etc/UTC",
+          "theme": "dark",
+          "style": "1",
+          "studies": ["RSI@tv-basicstudies","MACD@tv-basicstudies"],
+          "locale": "es"
+        });
+      </script>
+    </div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+      {
+        "interval": "1m",
+        "width": "100%",
+        "isTransparent": false,
+        "height": 300,
+        "symbol": "COINBASE:LTCUSD",
+        "showIntervalTabs": true,
+        "locale": "es",
+        "colorTheme": "dark"
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <a href="https://wa.me/+5493886412987" class="vip-button">SOPORTE 24/7</a>
+  </footer>
+</body>
+</html>
